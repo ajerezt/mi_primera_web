@@ -1,0 +1,361 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #0a1612;
+    border-bottom: 5px solid #c5c1c0;
+    padding: 50px;
+    color:   #c5c1c0;
+    position: fixed;
+}
+header h1 {
+    font-size: 40px;
+    display: inline-block;
+    line-height: 45px;
+    font-weight: bold;
+}
+header nav {
+    float: right;
+}
+header nav ul li {
+    display: inline-block;
+    line-height: 45px;
+}
+header nav ul li a {
+    color:   #c5c1c0;
+    font-size: 20px;
+    margin-right: 20px;
+}   
+header nav ul li a:hover {
+    color: #F7CE3E;
+}
+.checkbtn {
+    font-size: 25px;
+    color: #c5c1c0;
+    float: right;
+    line-height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/*--Formato de Body--*/
+body {
+    background-color: #c5c1c0;
+    padding: 0px 0px 0px 0px ;
+}
+.SobreMi {
+    width: 45%;
+    height: 10%;
+    margin: 150px auto 50px auto;
+    padding: 20px;
+    background-color: #F7CE3E;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+.SobreMi img { 
+    margin: 0px 30px 0px 0px;
+    flex: 1;
+}
+.Texto1 {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+.Texto1 h3 {
+    padding: 0px 0px 20px 0px;
+}   
+main {
+    margin: 0 auto;
+    width: 100%;
+    padding: 25px;
+    clear: both;
+}
+.MasDeLoQueSoy {
+    background-color: #1a2930;
+    border-radius: 7px;
+}
+.MasDeLoQueSoy img {
+    border-radius: 7px 7px 0px 0px;
+}
+.MasDeLoQueSoy h2 {
+    padding: 10px 0px 0px 20px ;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F7CE3E;
+}
+.Intro1 {
+    padding: 20px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #c5c1c0;
+}
+#Actividades {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1a2930;  
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Dibujo, .Extremo {
+    margin: 15px;
+    padding: 20px;
+    background-color: #0a1612;
+    border-color: #F7CE3E;
+    border-style: outset;
+    border-radius: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #c5c1c0;
+    text-align: justify;
+    width: 400px;
+}
+.Dibujo h2, .Extremo h2 {
+    padding-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #F7CE3E;
+    font-size: 22px;
+}
+#Actividades .Dibujo img {
+    margin: 5px 20px 5px 0px;
+    float: left;
+}
+#Actividades .Extremo img {
+    margin: 15px 0px 0px 0px;
+}
+.Videojuegos {
+    margin: 15px;
+    padding: 20px;
+    border: red;
+    border-style: dotted;
+    width: 400px;
+}
+#trabajos {
+    background-color: #1a2930;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+#trabajos h2 {
+    color: #F7CE3E;
+    margin-bottom: 15px;
+}
+.contenido2 {
+    display: flex;
+    flex-direction: row;
+}
+.grupodibujos {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+.grupodibujos img {
+    margin: 8px;
+    border: solid #0a1612;
+    border-style: outset;
+    height: 180px;
+    width: auto;
+}
+.pruebatexto {
+    border: red;
+    border-style: dotted;
+    width: 40%;
+}
+#form {
+    width: 40%;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #F7CE3E;
+    border-radius: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0a1612;
+    /*-- box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);*/
+}
+.cabecera {
+    display: flex;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.form-row label {
+    text-align: initial;
+    width: 100px;
+}
+.form-row input[type="text"], .form-row input[type="email"]  {
+    background-color: #c5c1c0;
+    border: 0;
+    border-radius: 6px;
+    width: 80%;
+    padding: 7px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+.form-row textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+
+    background-color: #c5c1c0;
+    border: 0;
+    border-radius: 6px;
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+ 
+    width: 80%;
+}
+.form-button button {
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #c5c1c0;
+    background-color: #1a2930;
+  
+    border: none;
+    border-radius: 3px;
+  
+    padding: 15px 30px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.form-button {
+    display: flex;
+    justify-content: center;
+}
+.form-button button:hover {
+    color: #F7CE3E;
+    background-color: #0a1612;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.6);
+}
+footer {
+    border-top: 35px solid #0a1612;
+    padding-top: 10px;
+    text-align: center;
+    height: 160px;
+    width: 100%;
+    background-color: #c5c1c0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    /*--header {
+        width: 100%;
+        height: 150px;
+        background-color: #0b3c5d;
+        padding: 50px;
+        color:   #F7CE3E;
+        position: fixed;
+    }--*/
+    .checkbtn {
+        display: block;
+    }
+    .navbar {
+        height: 0vh;
+        position: absolute;
+        top: 120px;
+        left: 100px;
+        width: 80%;
+        background: #1a2930;
+        text-align: right;
+    
+        transition: all 0.5s;
+        overflow: hidden;
+    }
+    
+    .navbar ul.nav-links {
+        float: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: auto;
+        margin: 0 auto;
+        opacity: 0;
+    }
+    
+    .navbar ul.nav-links li a:hover {
+        color: #F7CE3E;
+    }
+      /* ACTIVE */
+    .navbar.active {
+        height: auto;
+    }
+    
+    .navbar.active ul.nav-links {
+        opacity: 1;
+    }
+
+    .SobreMi {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .SobreMi img {
+        margin: 0 auto;
+        padding: 0px 0px 20px 0px;
+    }
+    .Texto1 {
+        flex-direction: column;
+        text-align: justify;
+    }
+    #form {
+        width: auto;
+        height: auto;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cabecera {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .form-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    .form-row label {
+        flex: 1;
+        text-align: left;
+        margin-right: 10px;
+    }
+    .form-row input[type="text"], .form-row input[type="email"] , .form-row textarea {
+        flex: 2;
+        padding: 5px;
+        width: 280px;
+    }
+    .form-button {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+  }
+

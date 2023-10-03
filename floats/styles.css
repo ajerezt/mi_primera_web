@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .pagina {
+    width: 1300px;
+    border: solid 2px red;
+    margin: 40px;
+  } 
+  .menu {
+    background-color: #565656;
+    height: 150px;
+  }
+  .barra-lateral {
+    background-color: #C09F80;
+    height: 1500px;
+    width:80px;
+    float: left;
+  }
+  .contenido {
+    background-color: #D7CEC7;
+    height: 1500px;
+    width: 1056px;
+    float: left;
+  }
+  .pie {
+    background-color: #76323F;
+    height: 220px;
+    clear: both;
+  }
