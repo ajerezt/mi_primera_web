@@ -50,7 +50,7 @@ body {
     background-color: #c5c1c0;
     padding: 0px 0px 0px 0px ;
 }
-.SobreMi {
+#SobreMi {
     width: 45%;
     height: 10%;
     margin: 150px auto 50px auto;
@@ -61,7 +61,7 @@ body {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     display: flex;
 }
-.SobreMi img { 
+#SobreMi img { 
     margin: 0px 30px 0px 0px;
     flex: 1;
 }
@@ -107,10 +107,22 @@ main {
     background-color: #1a2930;  
     border-radius: 7px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
 }
-.Dibujo, .Extremo {
+.TituloAct {
+    color: #F7CE3E;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.bloques {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Dibujo, .Extremo, .Cocina {
     margin: 15px;
     padding: 20px;
     background-color: #0a1612;
@@ -122,7 +134,7 @@ main {
     text-align: justify;
     width: 400px;
 }
-.Dibujo h2, .Extremo h2 {
+.Dibujo h2, .Extremo h2, .Cocina h2 {
     padding-bottom: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #F7CE3E;
@@ -135,12 +147,19 @@ main {
 #Actividades .Extremo img {
     margin: 15px 0px 0px 0px;
 }
-.Videojuegos {
+.Cocina {
     margin: 15px;
     padding: 20px;
-    border: red;
-    border-style: dotted;
     width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.Cocina img {
+    height: 250px;
+    display: flex;
+    align-self: center;
+    align-content: center;
+    align-items: center;
 }
 #trabajos {
     background-color: #1a2930;
@@ -154,6 +173,7 @@ main {
 #trabajos h2 {
     color: #F7CE3E;
     margin-bottom: 15px;
+    font-size: 20px;
 }
 .contenido2 {
     display: flex;
@@ -174,8 +194,8 @@ main {
     width: auto;
 }
 .pruebatexto {
-    border: red;
-    border-style: dotted;
+    color: #c5c1c0;
+    text-align: justify;
     width: 40%;
 }
 #form {
@@ -311,12 +331,14 @@ footer {
         opacity: 1;
     }
 
-    .SobreMi {
+    #SobreMi {
         width: 50%;
         display: flex;
         flex-direction: column;
     }
-    .SobreMi img {
+    #SobreMi img {
+        width: 100%;
+        height: auto;
         margin: 0 auto;
         padding: 0px 0px 20px 0px;
     }
@@ -324,11 +346,31 @@ footer {
         flex-direction: column;
         text-align: justify;
     }
+    .contenido2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .grupodibujos {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+    }
+    .grupodibujos img {
+        height: 130px;
+        width: auto;
+    }
+    .pruebatexto {
+        color: #c5c1c0;
+        text-align: justify;
+        width: 100%;
+    }
     #form {
         width: auto;
         height: auto;
         padding: 0px;
-        margin: 0px;
+        margin-top: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
