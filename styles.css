@@ -7,7 +7,7 @@
   }
 header {
     width: 100%;
-    height: 150px;
+    height: 80px;
     background-color: #0a1612;
     border-bottom: 5px solid #c5c1c0;
     padding: 50px;
@@ -17,20 +17,23 @@ header {
 header h1 {
     font-size: 40px;
     display: inline-block;
-    line-height: 45px;
+    line-height: 7px;
     font-weight: bold;
 }
 header nav {
     float: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 7px;
 }
 header nav ul li {
     display: inline-block;
-    line-height: 45px;
+    line-height: 0px;
 }
 header nav ul li a {
     color:   #c5c1c0;
-    font-size: 20px;
-    margin-right: 20px;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
 }   
 header nav ul li a:hover {
     color: #F7CE3E;
@@ -39,7 +42,7 @@ header nav ul li a:hover {
     font-size: 25px;
     color: #c5c1c0;
     float: right;
-    line-height: 50px;
+    line-height: 10px;
     margin-right: 20px;
     cursor: pointer;
     display: none;
@@ -53,7 +56,7 @@ body {
 #SobreMi {
     width: 45%;
     height: 10%;
-    margin: 150px auto 50px auto;
+    margin: 100px auto 50px auto;
     padding: 20px;
     background-color: #F7CE3E;
     border-radius: 15px;
@@ -154,12 +157,20 @@ main {
     display: flex;
     flex-direction: column;
 }
-.Cocina img {
-    height: 250px;
+.grupococina{
     display: flex;
-    align-self: center;
-    align-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Cocina img {
+    height: 80px;
+    width: auto;
+    margin: 5px;
+    display: flex;
+    align-self: flex-start;
+}
+.Cocina p {
+    float: right;
 }
 #trabajos {
     background-color: #1a2930;
@@ -299,23 +310,22 @@ footer {
     .navbar {
         height: 0vh;
         position: absolute;
-        top: 120px;
-        left: 100px;
-        width: 80%;
+        top: 100px;
+        left: 0;
+        width: 100%;
         background: #1a2930;
-        text-align: right;
+        text-align: center;
     
         transition: all 0.5s;
         overflow: hidden;
     }
-    
-    .navbar ul.nav-links {
-        float: none;
+    header nav ul li a {
+        padding: 20px 100px 20px 100px;
         display: flex;
         flex-direction: column;
-        text-align: center;
-        width: auto;
-        margin: 0 auto;
+    }
+    .navbar ul .nav-links {
+        margin: 0px auto;
         opacity: 0;
     }
     
